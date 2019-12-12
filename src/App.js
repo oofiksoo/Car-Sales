@@ -17,11 +17,11 @@ const App = props => {
     props.addFeature(item);
   };
   const [listingdata, setListingData] = useState([]);
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/",
-    targetUrl =
-      "https://marketcheck-prod.apigee.net/v1/search?api_key=9heKQt8ygPvgJPhApGaTiTqLympKOUZU&seller_type=dealer&year=2019&make=ford&model=mustang";
+  // const proxyUrl = "https://cors-anywhere.herokuapp.com/",
+  const targetUrl =
+    "https://marketcheck-prod.apigee.net/v1/search?api_key=9heKQt8ygPvgJPhApGaTiTqLympKOUZU&seller_type=dealer&year=2019&make=ford&model=mustang";
   const getdata = () => {
-    fetch(proxyUrl + targetUrl)
+    fetch(targetUrl)
       .then(res => res.json())
       .then(data => {
         console.log(data);
