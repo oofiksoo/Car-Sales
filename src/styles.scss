@@ -1,8 +1,6 @@
 html,
 body,
-#root {
-    height: 100%;
-}
+#root {}
 
 body {
     background: #333;
@@ -29,9 +27,6 @@ body {
     }
     .content {
         padding-top: 1em;
-        img {
-            width: 30%;
-        }
     }
     ol {
         margin-left: 0;
@@ -45,14 +40,23 @@ body {
 
 .listings {
     color: white;
-    width: 100%;
+    width: 90vw;
     background: #333;
-    padding: 3em;
     place-items: center;
-    margin: 0;
+    margin: 1rem 0rem;
+    h3 {
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+.appback {
+    background-color: #333;
 }
 
 .cars {
+    background: white;
+    border-radius: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,6 +66,8 @@ body {
 .carCard {
     background: white;
     color: black;
+    border-radius: 0.5rem;
+    padding: 1rem;
     margin: 2rem;
     width: 20%;
     border: 1px solid black;

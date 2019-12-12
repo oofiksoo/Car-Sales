@@ -12,10 +12,12 @@ export default props => {
           ))}
 
           <h1>{car.availability_status}</h1>
-          <h3>MSRP:{car.msrp}</h3>
+          <h2>MSRP: {car.msrp}</h2>
           <div className="price">
-            <h2>You Pay:{car.price}</h2>
-            <p>{car.source}</p>
+            <h2>You Pay: {car.price}</h2>
+            <a href={car.source}>
+              <p>{car.source}</p>
+            </a>
           </div>
         </div>
       ))}

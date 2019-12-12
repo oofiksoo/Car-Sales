@@ -52,8 +52,7 @@ const App = props => {
         </div>
       </div>
       <div className="listings">
-        <h3>Other Vechicle Listings</h3>
-
+        <h3>Other Vechicle Listings:</h3>
         <CarCard cars={listingdata} />
       </div>
     </div>
