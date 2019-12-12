@@ -2,7 +2,7 @@ import React from "react";
 
 export default props => {
   return (
-    <div className="cars">
+    <div className="cars" key={props.cars.vin}>
       {props.cars.map(car => (
         <div className="carCard" key={car.id}>
           {car.media.photo_links.slice(0, 1).map(img => (
@@ -13,7 +13,7 @@ export default props => {
 
           <h1>{car.availability_status}</h1>
           <h2>MSRP: {car.msrp}</h2>
-          <div className="price">
+          <div className="price" key={car.stock_no}>
             <h2>You Pay: {car.price}</h2>
             <a href={car.source}>
               <p>{car.source}</p>
