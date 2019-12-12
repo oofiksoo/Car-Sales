@@ -30,7 +30,7 @@ body {
     .content {
         padding-top: 1em;
         img {
-            width: 10%;
+            width: 30%;
         }
     }
     ol {
@@ -41,6 +41,30 @@ body {
             justify-content: flex-start;
         }
     }
+}
+
+.listings {
+    color: white;
+    width: 100%;
+    background: #333;
+    padding: 3em;
+    place-items: center;
+    margin: 0;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carCard {
+    background: white;
+    color: black;
+    margin: 2rem;
+    width: 20%;
+    border: 1px solid black;
 }
 
 .button {
