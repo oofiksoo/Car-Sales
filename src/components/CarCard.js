@@ -10,8 +10,8 @@ export default props => {
           <div className="searchCount">
             <h2>You Pay:{car.price}</h2>
             <p>{car.source}</p>
-            {car.media.photo_links.map(img => (
-              <img src={img} alt="photo" />
+            {car.media.photo_links.slice(0, 1).map(img => (
+              <img src={img} alt="carpic" />
             ))}
           </div>
         </div>
