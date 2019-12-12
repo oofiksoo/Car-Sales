@@ -2,7 +2,7 @@ import React from "react";
 
 export default props => {
   return (
-    <div className="cars" key={props.cars.vin}>
+    <div className="cars">
       {props.cars.map(car => (
         <div className="carCard" key={car.id}>
           {car.media.photo_links.slice(0, 1).map(img => (

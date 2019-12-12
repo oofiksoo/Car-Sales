@@ -19,7 +19,7 @@ const App = props => {
   const [listingdata, setListingData] = useState([]);
   const proxyUrl = "https://cors-anywhere.herokuapp.com/",
     targetUrl =
-      "https://marketcheck-prod.apigee.net/v1/search?api_key=QvZEqHZSO7OuNEiTA2PEaB9SCic6MrVo&seller_type=dealer&year=2019&make=ford&model=mustang";
+      "https://marketcheck-prod.apigee.net/v1/search?api_key=9heKQt8ygPvgJPhApGaTiTqLympKOUZU&seller_type=dealer&year=2019&make=ford&model=mustang";
   const getdata = () => {
     fetch(proxyUrl + targetUrl)
       .then(res => res.json())
